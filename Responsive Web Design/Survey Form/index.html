@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Counter Strike competition form</h1>
+    <p id="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+    <form id="survey-form">
+        <fieldset>
+            <label for="name" id="name-label">
+                Name: 
+                <input id="name" type="text" required placeholder="John Kowalski">
+            </label>
+            <label for="nick" id="nick-label" >
+                Nickname: 
+                <input id="nick" type="text" required placeholder="Taz"></label>
+            <label for="email" id="email-label">
+                E-mail: 
+                <input id="email" type="email" required placeholder="loremipsum@gmail.com"></label>
+            <label for="number" id="number-label">
+                Faceit elo: 
+                <input id="number" type="number" min="300" max="5000" required placeholder="1050">
+            </label>
+            <label for="dropdown">
+                What is your current favourite gun?
+                <select id="dropdown">
+                    <option value="">Choose one</option>
+                    <option value="1">AK-47</option>
+                    <option value="2">M4A1-S</option>
+                    <option value="3">M4A4</option>
+                </select>
+            </label>
+                <p id="radio-p">What is your opinion about CS2?</p>
+                <label for="ratiotypes"><input class="ratiotypes" type="radio" name="opinion" value="bad"> A lot of bugs </label>
+                <label for="ratiotypes"><input class="ratiotypes" type="radio" name="opinion" value="good"> Very good game </label>
+            <p id="checkbox-p">Terms and agreements</p>
+                <label for="agreement">
+                <input type="checkbox" id="agreement" value="agreement" required> I agree <a href="">terms and conditions</a>
+            </label>
+            <label for="advertisements">
+                <input type="checkbox" id="advertisements" value="advertisements"> I agree to put my account on various scout websties
+            </label>
+            <label for="about-you" style="margin-top: 20px; color: black;">
+                Tell us something about you:
+                <textarea id="about-you" placeholder="I've been playing since..."></textarea>
+            </label>
+            <input type="submit" id="submit">
+        </fieldset>
+    </form>
+</body>
+</html>
