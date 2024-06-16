@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bray Wyatt's Page</title>
+    <link rel="icon" href="favicon.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script>
+function createDots() {
+    const numDots = 50;
+    const titleDiv = document.getElementById('title');
+
+    for (let i = 0; i < numDots; i++) {
+        const dot = document.createElement('div');
+        dot.classList.add('dot');
+        dot.style.top = getRandomInt(0, window.innerHeight) + 'px';
+        dot.style.left = getRandomInt(0, window.innerWidth) + 'px';
+        dot.style.animationDuration = getRandomInt(2, 8) + 's';
+        dot.style.animationDelay = getRandomInt(0, 5) + 's';
+        titleDiv.appendChild(dot);
+    }
+}
+
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+window.onload = createDots;
+    </script>
+    <main id="main">
+        <div id="title">
+            <h1>Bray Wyatt</h1>
+        </div>
+        <div id="img-div">
+            <img src="bw.jpg" alt="bray wyatt photo" id="image">
+            <div id="img-caption">
+Bray Wyatt, who tragically passed away in 2023, was a professional wrestler known for his captivating and eerie character work in WWE, combining dark psychological storytelling with formidable in-ring skills to engage and entertain audiences.
+            </div>
+        </div>
+        <div id="tribute-info">
+            <p>
+                Bray Wyatt, also known by his real name Windham Rotunda was known for creating a tag team called 
+                The Wyatt Family which was a WWE faction known for its unconventional, dark, and charismatic style. The group initially included Luke Harper (Jonathan Huber) and Erick Rowan (Joseph Ruud).
+                He has held several championships in WWE. Here is a list of the titles he has won along with the dates he won them:
+            </p>
+            <ul>
+                <li>WWE Championship
+                  <ul>
+                    <li>February 12, 2017</li>
+                  </ul>
+                </li>
+                <li>Universal Championship
+                  <ul>
+                    <li>August 23, 2020</li>
+                    <li>October 31, 2019</li>
+                  </ul>
+                </li>
+                <li>WWE Raw Tag Team Championship
+                  <ul>
+                    <li>December 13, 2016 (with Randy Orton)</li>
+                  </ul>
+                </li>
+                <li>WWE SmackDown Tag Team Championship
+                  <ul>
+                    <li>December 4, 2016 (with Randy Orton and Luke Harper, under the Freebird Rule)</li>
+                    <li>August 23, 2020 (with Erick Rowan, under The Wyatt Family)</li>
+                  </ul>
+                </li>
+            </ul>
+            <div id="space">***</div>
+            <div id="tribute-link">
+                <a href='https://www.youtube.com/watch?v=CR6yVUxXnyA' target="_blank">He's got the whole world in His hands, <br>
+                He's got the whole wide world in His hands.</a>
+            </p>
+        </div>
+    </main>
+    <audio id="background-music" loop>
+        <source src="bw-themesong.mp3" type="audio/mpeg">
+        Twoja przeglądarka nie obsługuje elementu audio.
+    </audio>
+    <script>
+        window.addEventListener('load', function() {
+            var audio = document.getElementById('background-music');
+            audio.volume = 0.1;
+            audio.play();
+        });
+    </script>
+</body>
+</html>
