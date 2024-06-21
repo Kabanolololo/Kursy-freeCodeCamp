@@ -1,0 +1,173 @@
+/* Global reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f2f2f2;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+#header {
+    background-color: #f44336;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#header-img {
+    width: 80px;
+    height: 80px;
+}
+
+#nav-bar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#nav-bar ul li {
+    margin: 0 15px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+#features .feature{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+section {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #f44336;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.feature, .pricing-option, .testimonial {
+    margin-bottom: 20px;
+}
+
+.feature {
+    margin-bottom: 30px;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+}
+.pricing-option {
+    text-align: center;
+}
+
+.pricing-option h3 {
+    color: #f44336;
+    font-size: 1.2em;
+}
+
+.pricing-option p {
+    margin-bottom: 10px;
+}
+
+.pricing-option .select-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.pricing-option .select-button:hover {
+    background-color: #e53935;
+}
+
+.pricing-option:nth-child(even) {
+    background-color: #ffebee;
+}
+.testimonial {
+    text-align: center;
+}
+
+.testimonial p {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.testimonial cite {
+    font-weight: bold;
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery-images img {
+    width: 30%;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+#form {
+    text-align: center;
+    margin-bottom: 80px; 
+}
+
+input[type="email"] {
+    padding: 10px;
+    width: 60%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #e53935;
+}
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
