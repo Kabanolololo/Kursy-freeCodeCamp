@@ -2,16 +2,17 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1a1a1a;
-    color: #ccc;
+    background-color: #121212;
+    color: #ddd;
 }
 
 header {
-    background-color: #333;
-    color: white;
-    padding: 15px 0;
+    background-color: #252525;
+    color: #ffcc00;
+    padding: 20px 0;
     text-align: center;
-    font-size: 24px;
+    font-size: 28px;
+    animation: slideDown 1s ease-out;
 }
 
 .container {
@@ -20,10 +21,10 @@ header {
 }
 
 .menu {
-    border-right: 1px solid #666;
-    width: 200px;
-    background-color: #444;
-    padding: 10px;
+    border-right: 1px solid #555;
+    width: 220px;
+    background-color: #333;
+    padding: 15px;
     height: 100vh;
     overflow-y: auto;
 }
@@ -34,33 +35,50 @@ header {
 }
 
 .menu li {
-    margin: 10px 0;
+    margin: 15px 0;
 }
 
 .menu a {
     text-decoration: none;
-    color: white;
+    color: #ffcc00;
     display: block;
-    padding: 10px;
+    padding: 12px;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .menu a:hover {
-    background-color: #666;
+    background-color: #555;
+    transform: scale(1.05);
 }
 
 .content {
     flex: 1;
-    padding: 20px;
-    background-color: #2a2a2a;
+    padding: 25px;
+    background-color: #1d1d1d;
+}
+
+.course {
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+
+.new-content::first-letter {
+    margin-left: 20px;
+}
+
+.new-content {
+    margin-top: 15px;
 }
 
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #252525;
+    color: #ffcc00;
     text-align: center;
-    padding: 10px 0;
+    padding: 15px 0;
     position: fixed;
     width: 100%;
     bottom: 0;
